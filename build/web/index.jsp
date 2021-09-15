@@ -11,33 +11,19 @@
         <title>Tienda Virtual</title>
     </head>
        
-    <body class="body">
-        <div class="container center-block" >
-            <div class="row justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/images/carrito.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <form method="POST" action="Validar">
-                            <div class="form-group">
-                                <label>No de cedula</label>
-                                <input type="text" class="form-control" name="txtcedula">
-                                <small id="emailHelp" class="form-text text-muted">Ingrese su documento sin espacios ni puntos</small>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Contraseña</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" name="txtpassword">
-                            </div>
-                            <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Permanecer loggeado</label>
-                            </div>
-                            <button type="submit" class="btn btn-primary" name="accion" value="Ingresar">Ingresar</button>
-                        </form>
-                    </div>
-                </div>
-            </div>  
-        </div>
- 
+    <body class="body" >
+        <div class="login">
+            <div class="title">
+                <h1>INGRESA A LA TIENDA</h1>
+            </div>
+	
+        <form method="post" action="Validar">
+            <input type="text" name="txtcedula" placeholder="Usuario" required="required" />
+            <input class="form-control" id="exampleInputPassword1" name="txtpassword" type="password"  placeholder="Contraseña" required="required" />
+            <button type="submit" name="accion" value="Ingresar" class="btn btn-primary btn-block btn-large">Enviar</button>
+        </form>
+    </div>
+        
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
