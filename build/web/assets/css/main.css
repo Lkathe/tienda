@@ -74,3 +74,72 @@ input {
 	transition: box-shadow .5s ease;
 }
 input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+    max-width: 980px;
+}
+
+.item {
+    width: 116px;
+    justify-content: space-between;
+    border: 2px solid #941767 ;
+    padding: 10px;
+    background: #941767;
+    margin-right: 21px;
+}
+
+.btns .item a {
+    color:white;
+    text-align: center;
+    text-decoration: none;
+}
+.contentPrincipal{
+   padding: 29px 10% 10%;
+   display: grid;
+   justify-content: center;
+}
+
+.contentPrincipalcrud{
+   padding: 29px 10% 10%;
+   display: grid;
+   justify-content: center;
+}
+@media only screen and (max-width: 1440px) {
+    .contentPrincipal{
+       
+        padding: 12%;
+     }
+}
+@media only screen and (max-width: 866px) {
+    .contentPrincipal{
+        justify-content: center;
+        padding: 16%;
+     }
+}
+
+@media only screen and (max-width: 529px) {
+    .contentPrincipal{
+       
+        padding: 36%;
+     }
+}
+@media only screen and (max-width: 390px) {
+    .contentPrincipal{
+       
+        padding-top: 82%;
+     }
+}
+
+@media only screen and (max-width: 866px) {
+    .btns {
+       flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 866px) {
+    .btns .item  {
+        margin-bottom: 20px;
+    }
+}

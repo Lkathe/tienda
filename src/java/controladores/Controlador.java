@@ -33,6 +33,10 @@ public class Controlador extends HttpServlet {
             request.getRequestDispatcher("Principal.jsp").forward(request, response);
             
         }
+        if (menu.equals("Usuarios")) {
+            request.getRequestDispatcher("Usuarios.jsp").forward(request, response);
+            
+        }
         
         }
     

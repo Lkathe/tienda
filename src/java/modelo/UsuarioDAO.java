@@ -32,7 +32,27 @@ public class UsuarioDAO {
                 usuario.setUsuario(rs.getString("usuario"));
                 System.err.println(""+usuario.getNombre_usuario());
               }
-        } catch (Exception e) {
+        } catch (SQLException e) {
+        }
+        return usuario;
+    }
+    public Usuario Crear(int cedula_usuario){
+        Usuario usuario = new Usuario();
+        String consulta = "SELECT * FROM usuarios WHERE cedula_usuario = ?";
+        con = cn.Conexion();
+        try {
+            ps = con.prepareStatement(consulta);
+            ps.setInt(1, cedula_usuario);
+            rs = ps.executeQuery();
+            while(rs.next()){
+                usuario.setCedula_usuario(rs.getInt("cedula"));
+                usuario.setEmail_usuario(rs.getNString("email"));
+                usuario.setNombre_usuario(rs.getString("nombre"));
+                usuario.setPassword(rs.getString("contraseña"));
+                usuario.setUsuario(rs.getString("usuario"));
+                System.err.println(""+usuario.getNombre_usuario());
+              }
+        } catch (SQLException e) {
         }
         return usuario;
     }
@@ -60,4 +80,8 @@ public class UsuarioDAO {
         }
         return usuario;
     }
+      
+     
+      
+      
 }

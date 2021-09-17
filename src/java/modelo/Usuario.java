@@ -1,11 +1,11 @@
 package modelo;
 
 public class Usuario {
-    int  cedula_usuario;
-    String email_usuario;
-    String nombre_usuario;
-    String password;
-    String usuario;
+    private int  cedula_usuario;
+    private String email_usuario;
+    private String nombre_usuario;
+    private String password;
+    private String usuario;
 
     public Usuario() {
     }
@@ -59,4 +59,3 @@ public class Usuario {
     }
     
 }
-    

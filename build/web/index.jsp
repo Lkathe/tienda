@@ -18,8 +18,8 @@
             </div>
 	
         <form method="post" action="Validar">
-            <input type="text" name="txtcedula" placeholder="Usuario" required="required" />
-            <input class="form-control" id="exampleInputPassword1" name="txtpassword" type="password"  placeholder="Contraseña" required="required" />
+            <input type="text" name="txtcedula" id="InputUser" placeholder="Usuario" required="required" />
+            <input class="form-control" id="InputPassword1" name="txtpassword" type="password"  placeholder="Contraseña" required="required" />
             <button type="submit" name="accion" value="Ingresar" class="btn btn-primary btn-block btn-large">Enviar</button>
         </form>
     </div>
