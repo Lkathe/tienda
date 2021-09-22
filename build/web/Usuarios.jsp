@@ -11,76 +11,77 @@
         <title>Usuario</title>
     </head>
        
-    <body class="body" >
-        <div class="contentPrincipal">
-            <div class="btns usuarios">
-                <div class="item">
-                    <a href="Controlador? accion=">
-                        Usuarios
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="Controlador? accion=">
-                       Clientes
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="Controlador? accion=">
-                        Proveedores
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="Controlador? accion=">
-                       Productos
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="Controlador? accion=">
-                       Ventas 
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="Controlador? accion=">
-                        reportes 
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="login">
-	
-        <form method="post" action="Validar">
-            <input type="text" name="?" id="InputCed" placeholder="Cedula" required="required" />
-            <input type="text" name="?" id="InputName" placeholder="Nombre Completo" required="required" />
-            <input class="form-control" id="InputMail" name="?" type="text"  placeholder="Correo Electronico" required="required" />
-            <input type="text" name="txtcedula" id="InputUser" placeholder="Usuario" required="required" />
-            <input class="form-control" id="InputPassword1" name="txtpassword" type="password"  placeholder="Contraseña" required="required" />
-            
-           <div class="contentPrincipalcrud">
-            <div class="btns usuarios">
-                <div class="item">
-                    <a href="Controlador? accion=">
-                        Consultar
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="Controlador? accion=">
-                       Crear
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="Controlador? accion=">
-                        Actualizar
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="Controlador? accion=">
-                       Borrar
-                    </a>
+    <body class="layout" >
+   
+            <div class="contentPrincipal">
+                <div class="btns usuarios">
+                    <div class="item">
+                        <a href="Controlador? accion=">
+                            Usuarios
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="Controlador? accion=">
+                           Clientes
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="Controlador? accion=">
+                            Proveedores
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="Controlador? accion=">
+                           Productos
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="Controlador? accion=">
+                           Ventas 
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="Controlador? accion=">
+                            reportes 
+                        </a>
+                    </div>
                 </div>
             </div>
+            <div class="login">
+
+            <form method="post" action="Validar">
+                <input type="text" name="?" id="InputCed" placeholder="Cedula" required="required" />
+                <input type="text" name="?" id="InputName" placeholder="Nombre Completo" required="required" />
+                <input class="form-control" id="InputMail" name="?" type="text"  placeholder="Correo Electronico" required="required" />
+                <input type="text" name="txtcedula" id="InputUser" placeholder="Usuario" required="required" />
+                <input class="form-control" id="InputPassword1" name="txtpassword" type="password"  placeholder="Contraseña" required="required" />
+
+               <div class="contentPrincipalcrud">
+                    <div class="btns usuarios">
+                        <div class="item">
+                            <a href="Controlador? accion=">
+                                Consultar
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="Controlador? accion=">
+                               Crear
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="Controlador? accion=">
+                                Actualizar
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="Controlador? accion=">
+                               Borrar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
-        </form>
-    </div>
         
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
